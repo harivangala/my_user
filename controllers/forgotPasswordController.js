@@ -8,7 +8,7 @@ const {Op} = require('sequelize');
 
 const transporter = nodemailer.createTransport(sendgridTransport({
     auth: {
-        api_key: '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'
+        api_key: process.env.SENDGRID_API_KEY
     }
 }));
 
